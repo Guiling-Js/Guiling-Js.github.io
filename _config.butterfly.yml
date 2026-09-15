@@ -4,12 +4,27 @@ nav:
   display_title: true
   fixed: false
 
+# 文章 meta 信息显示
+post_meta:
+  page:
+    date_type: created      
+    date_format: date
+    categories: true        
+    tags: false             
+    label: true
+  post:
+    date_type: both         
+    date_format: date
+    categories: true        
+    tags: true            
+    label: true
+
 # 网站图标
 favicon: /img/favicon.png
 
 # 头像
 avatar:
-  img: /images/avatar.jpg
+  img: /images/head.jpg
   effect: false        # 头像动画，建议关闭
 
 # 顶部图

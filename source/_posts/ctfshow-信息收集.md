@@ -1,5 +1,4 @@
 ---
-​---
 title: ctfshow-信息收集
 date: 2026-09-15 10:00:00
 categories:
@@ -11,7 +10,6 @@ tags:
   - ctfshow
 description: ctfshow 信息收集篇 Web 1~5 刷题记录：查看源码、HTTP请求、robots.txt、备份文件、前端加密等入门技巧总结。
 cover: /img/3.png
-​---
 ---
 
 # ctfshow 信息收集
