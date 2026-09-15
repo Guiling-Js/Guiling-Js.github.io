@@ -4,6 +4,14 @@ nav:
   display_title: true
   fixed: false
 
+  # 导航栏菜单
+menu:
+  首页: / || fas fa-home
+  归档: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
+  分类: /categories/ || fas fa-folder-open
+  关于: /about/ || fas fa-heart
+
 # 文章 meta 信息显示
 post_meta:
   page:
