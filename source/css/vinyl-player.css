@@ -42,8 +42,9 @@
   font-weight: 600;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
+  width: 90px;              /* 固定宽度，胶囊不再被撑长，可按需调 */
 }
+
 .vinyl-artist {
   color: rgba(255, 255, 255, .45);
   font-size: 12px;
@@ -81,6 +82,22 @@
 #vp-audio { display: none; }
 
 @keyframes spin { to { transform: rotate(360deg); } }
+
+/* 长歌名跑马灯：只有歌名超宽时 JS 会给 span 加 .vp-scrolling */
+.vinyl-title span {
+  display: inline-block;
+  padding-right: 24px;       /* 滚到末尾时的间隔 */
+}
+.vinyl-title span.vp-scrolling {
+  animation: vp-marquee 8s linear infinite;
+}
+
+@keyframes vp-marquee {
+  0%, 10%    { transform: translateX(0); }
+  45%, 55%   { transform: translateX(calc(-100% + 90px)); }  /* 160 ≈ 宽度170 - 10 */
+  90%, 100%  { transform: translateX(0); }
+}
+
 
 /* 手机端 */
 @media screen and (max-width: 768px) {

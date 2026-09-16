@@ -1,8 +1,8 @@
 (function () {
   // ★ 歌单配置：cover 可换成每首歌自己的封面图路径，没有就统一用一张
   var playlist = [
-    { title: '云月谣', artist: '聂蓉绝恋', src: '/music/yueyueyao.mp3', cover: '/images/head.jpg' }
-    // { title: '歌名2', artist: '歌手2', src: '/music/song2.mp3', cover: '/images/head.jpg' }
+    { title: '一程山路', artist: '毛不易', src: '/music/一程山路 - 毛不易.mp3', cover: '/images/head.jpg' },
+    { title: 'Merry Christmas Mr.Lawrence(劳伦斯先生圣诞快乐)', artist: '坂本龍一', src: '/music/Merry Christmas Mr.Lawrence (劳伦斯先生圣诞快乐) - 坂本龍一.mp3', cover: '/images/head.jpg' }
   ];
 
   var idx = 0;
@@ -33,7 +33,17 @@
   function load(i, autoplay) {
     idx = (i + playlist.length) % playlist.length;
     audio.src = playlist[idx].src;
-    title.textContent = playlist[idx].title;
+    title.innerHTML = '<span>' + playlist[idx].title + '</span>';
+
+// 歌名超出容器宽度才启动滚动动画（短歌名保持静止）
+var span = title.querySelector('span');
+requestAnimationFrame(function () {
+  span.classList.remove('vp-scrolling');   // 先清除上一次的滚动状态
+  if (span.scrollWidth > title.clientWidth) {
+    span.classList.add('vp-scrolling');
+  }
+});
+
     artist.textContent = playlist[idx].artist;
     cover.src = playlist[idx].cover;
     if (autoplay) audio.play();

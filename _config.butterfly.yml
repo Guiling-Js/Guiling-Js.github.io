@@ -54,6 +54,14 @@ darkmode:
   button: true
   autoChangeMode: 2
 
+  #音乐播放器连放
+pjax:
+  enable: true
+  exclude:
+    # - /about/
+    # - /music/
+
+
 # 打字机效果
 subtitle:
   enable: true
@@ -88,6 +96,10 @@ inject:
   head:
     - <link rel="stylesheet" href="/css/vinyl-player.css">
     - <style>#page-header{background-position:center 25%;}</style>
+  bottom:
+    - <div class="vinyl-player"></div>
+    - <script src="/js/vinyl-player.js"></script>
+
 
 
 aplayerInject:
