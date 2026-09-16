@@ -101,6 +101,15 @@
 
 /* 手机端 */
 @media screen and (max-width: 768px) {
-  #vinyl-player { right: 12px; bottom: 70px; max-width: 260px; }
+  #vinyl-player {
+    right: 55px;
+    bottom: 70px;
+    max-width: 200px;
+    gap: 6px;
+    padding: 8px 8px 8px 6px;
+  }
   .vinyl-artist { display: none; }
+  .vinyl-title  { max-width: 90px; }   /* 手机端文字窗口也窄一点 */
+  .vinyl-cover  { width: 34px; height: 34px; }
 }
+

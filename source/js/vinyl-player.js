@@ -1,8 +1,8 @@
 (function () {
   // ★ 歌单配置：cover 可换成每首歌自己的封面图路径，没有就统一用一张
   var playlist = [
-    { title: '一程山路', artist: '毛不易', src: '/music/一程山路 - 毛不易.mp3', cover: '/images/head.jpg' },
-    { title: 'Merry Christmas Mr.Lawrence(劳伦斯先生圣诞快乐)', artist: '坂本龍一', src: '/music/Merry Christmas Mr.Lawrence (劳伦斯先生圣诞快乐) - 坂本龍一.mp3', cover: '/images/head.jpg' }
+    { title: '一程山路', artist: '毛不易', src: '/music/一程山路 - 毛不易.mp3', cover: 'https://cdn.jsdelivr.net/gh/guiling-js/Guiling-Js.github.io@main/source/img/music.png' },
+    { title: 'Merry Christmas Mr.Lawrence(劳伦斯先生圣诞快乐)', artist: '坂本龍一', src: '/music/Merry Christmas Mr.Lawrence (劳伦斯先生圣诞快乐) - 坂本龍一.mp3', cover: 'https://cdn.jsdelivr.net/gh/guiling-js/Guiling-Js.github.io@main/source/img/music2.png' }
   ];
 
   var idx = 0;
