@@ -14,7 +14,7 @@ timezone: 'Asia/Shanghai'
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://Guiling-Js.github.io
-permalink: :year/:month/:day/:title/
+permalink: :title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -97,6 +97,18 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: butterfly
+# 音乐播放器
+aplayer:
+  meting: true
+  asset_inject: false
+
+# 本地搜索（配合 hexo-generator-searchdb 插件）
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
+
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

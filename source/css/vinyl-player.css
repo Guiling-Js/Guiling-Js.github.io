@@ -1,0 +1,89 @@
+/* 深色胶囊迷你播放器 */
+#vinyl-player {
+  position: fixed;
+  right: 50px;
+  bottom: 80px;          /* 抬高避让右下角的回到顶部按钮 */
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(30, 34, 46, .92);
+  backdrop-filter: blur(8px);
+  border-radius: 50px;
+  padding: 8px 14px 8px 8px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, .35);
+  user-select: none;
+  max-width: 340px;
+}
+
+/* 封面 */
+.vinyl-cover {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  cursor: pointer;
+  background: #444;
+}
+#vinyl-player.playing .vinyl-cover {
+  animation: spin 8s linear infinite;
+}
+
+/* 文字区 */
+.vinyl-info {
+  flex: 1;
+  min-width: 0;
+  line-height: 1.3;
+}
+.vinyl-title {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.vinyl-artist {
+  color: rgba(255, 255, 255, .45);
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 按钮 */
+.vinyl-btn {
+  border: none;
+  cursor: pointer;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  color: #fff;
+  font-size: 15px;
+  padding: 0;
+}
+.vinyl-btn-play {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4a8cff, #2f6bff);
+  font-size: 14px;
+  box-shadow: 0 2px 8px rgba(47, 107, 255, .45);
+}
+.vinyl-btn-next { opacity: .85; }
+.vinyl-btn-next:hover { opacity: 1; }
+.vinyl-btn-play:hover { filter: brightness(1.1); }
+
+/* 隐藏的 audio 元素 */
+#vp-audio { display: none; }
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* 手机端 */
+@media screen and (max-width: 768px) {
+  #vinyl-player { right: 12px; bottom: 70px; max-width: 260px; }
+  .vinyl-artist { display: none; }
+}

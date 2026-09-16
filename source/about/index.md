@@ -1,4 +1,6 @@
 ---
 title: about
-date: 2026-09-15 18:03:54
+date: 2024-01-01 08:00:00
+type: about
+top_img: /img/about1.png 
 ---
