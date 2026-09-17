@@ -43,7 +43,7 @@ tag_img: https://cdn.jsdelivr.net/gh/guiling-js/Guiling-Js.github.io@main/source
 category_img: https://cdn.jsdelivr.net/gh/guiling-js/Guiling-Js.github.io@main/source/img/4.jpg
 
 # 背景图
-background: /img/banner.jpg
+background: https://cdn.jsdelivr.net/gh/guiling-js/Guiling-Js.github.io@main/source/img/background1.jpg
 
 # 代码高亮
 highlight_theme: mac
@@ -104,4 +104,20 @@ inject:
 
 aplayerInject:
   enable: false
+
+# 侧边栏设置
+aside:
+  enable: true
+  position: right
+  card_author:
+    enable: true
+    description: ctfer
+    button:
+      enable: true
+      icon: fab fa-github
+      text: Follow Me
+      link: https://github.com/Guiling-Js
+  card_announcement:
+    enable: true
+    content: 欢迎来到我的博客 🎉 持续更新中~
 

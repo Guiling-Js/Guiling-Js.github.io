@@ -1,15 +1,15 @@
 ---
 title: ctfshow-信息收集
-date: 2026-09-15 10:00:00
+date: 2025-11-15 10:00:00
 categories:
   - CTF刷题笔记
 tags:
   - CTF
-  - Web安全
+  - Web入门
   - 信息收集
   - ctfshow
-description: ctfshow 信息收集篇 Web 1~5 刷题记录：查看源码、HTTP请求、robots.txt、备份文件、前端加密等入门技巧总结。
-cover: /img/3.png
+description: ctfshow信息收集
+cover: https://cdn.jsdelivr.net/gh/guiling-js/Guiling-Js.github.io@main/source/img/3.png
 ---
 
 # ctfshow 信息收集
