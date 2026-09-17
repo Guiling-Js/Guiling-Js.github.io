@@ -43,7 +43,7 @@ tag_img: https://cdn.jsdelivr.net/gh/guiling-js/Guiling-Js.github.io@main/source
 category_img: https://cdn.jsdelivr.net/gh/guiling-js/Guiling-Js.github.io@main/source/img/4.jpg
 
 # 背景图
-background: https://cdn.jsdelivr.net/gh/guiling-js/Guiling-Js.github.io@main/source/img/background1.jpg
+background: https://cdn.jsdelivr.net/gh/guiling-js/Guiling-Js.github.io@main/source/img/background1.png
 
 # 代码高亮
 highlight_theme: mac
