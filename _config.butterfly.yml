@@ -1,6 +1,6 @@
 # 导航栏
 nav:
-  logo: /images/head.jpg
+  logo: /images/head2.jpg
   display_title: true
   fixed: false
 
@@ -10,6 +10,7 @@ menu:
   归档: /archives/ || fas fa-archive
   标签: /tags/ || fas fa-tags
   分类: /categories/ || fas fa-folder-open
+  友链: /link/ || fas fa-link
   关于: /about/ || fas fa-heart
 
 # 文章 meta 信息显示
@@ -28,11 +29,11 @@ post_meta:
     label: true
 
 # 网站图标
-favicon: https://cdn.jsdelivr.net/gh/guiling-js/Guiling-Js.github.io@main/source/images/head.jpg
+favicon: https://cdn.jsdelivr.net/gh/guiling-js/Guiling-Js.github.io@main/source/images/head2.jpg
 
 # 头像
 avatar:
-  img: https://cdn.jsdelivr.net/gh/guiling-js/Guiling-Js.github.io@main/source/images/head.jpg
+  img: https://cdn.jsdelivr.net/gh/guiling-js/Guiling-Js.github.io@main/source/images/head2.jpg
   effect: false        # 头像动画，建议关闭
 
 # 顶部图

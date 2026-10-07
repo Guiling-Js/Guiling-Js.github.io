@@ -1,0 +1,7 @@
+- class_name: 好朋友们
+  class_desc: 都是很棒的博客，欢迎交换友链
+  link_list:
+    - name: jjdbt
+      link: https://jjdbt.github.io/
+      avatar: /img/jjdbt.png
+      descr: 二次元蠕虫
